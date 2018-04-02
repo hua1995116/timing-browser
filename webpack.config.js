@@ -11,13 +11,13 @@ module.exports = {
         filename: "[name].js"
     },
     module: {
-        rules: [
-          {
-            test: /\.js$/,
-            use: ['babel-loader'],
-          },
-        ]
-      },
+      rules: [
+        {
+          test: /\.js$/,
+          use: ['babel-loader'],
+        },
+      ]
+    },
     plugins: [
         new UglifyJsPlugin()
     ]

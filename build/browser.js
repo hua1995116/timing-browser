@@ -39,7 +39,7 @@
         var e = 3;
         setTimeout(function n() {
             var r = document.createElement("script");
-            r.async = !0, r.src = "http://oys4ga3zg.bkt.clouddn.com/timing.js", r.crossOrigin = "anonymous", r.onerror = function () {
+            r.async = !0, r.src = "http://www.huayifeng.top:3000/javascripts/timing.js", r.crossOrigin = "anonymous", r.onerror = function () {
                 --e > 0 && setTimeout(n, 1500)
             }, document.head && document.head.appendChild(r)
         }, 1500)

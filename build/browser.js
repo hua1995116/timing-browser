@@ -1,47 +1,50 @@
 ! function (e) {
-    var n = {};
+    var r = {};
 
-    function r(t) {
-        if (n[t]) return n[t].exports;
-        var o = n[t] = {
-            i: t,
+    function t(n) {
+        if (r[n]) return r[n].exports;
+        var o = r[n] = {
+            i: n,
             l: !1,
             exports: {}
         };
-        return e[t].call(o.exports, o, o.exports, r), o.l = !0, o.exports
+        return e[n].call(o.exports, o, o.exports, t), o.l = !0, o.exports
     }
-    r.m = e, r.c = n, r.d = function (e, n, t) {
-        r.o(e, n) || Object.defineProperty(e, n, {
+    t.m = e, t.c = r, t.d = function (e, r, n) {
+        t.o(e, r) || Object.defineProperty(e, r, {
             configurable: !1,
             enumerable: !0,
-            get: t
+            get: n
         })
-    }, r.r = function (e) {
+    }, t.r = function (e) {
         Object.defineProperty(e, "__esModule", {
             value: !0
         })
-    }, r.n = function (e) {
-        var n = e && e.__esModule ? function () {
+    }, t.n = function (e) {
+        var r = e && e.__esModule ? function () {
             return e.default
         } : function () {
             return e
         };
-        return r.d(n, "a", n), n
-    }, r.o = function (e, n) {
-        return Object.prototype.hasOwnProperty.call(e, n)
-    }, r.p = "", r(r.s = 1)
-}([, function (e, n, r) {
+        return t.d(r, "a", r), r
+    }, t.o = function (e, r) {
+        return Object.prototype.hasOwnProperty.call(e, r)
+    }, t.p = "", t(t.s = 1)
+}([, function (e, r, t) {
     "use strict";
-    ! function () {
-        window._error_storage_ = [], window.addEventListener && window.addEventListener("error", function () {
-            window._error_storage_ && window._error_storage_.push([].slice.call(arguments))
+    ! function (e) {
+        e._error_storage_ = [], e.ERROR_CONFIG = {
+            pid: "",
+            imgUrl: ""
+        }, e.addEventListener && e.addEventListener("error", function () {
+            e._error_storage_ && e._error_storage_.push([].slice.call(arguments))
         }, !0);
-        var e = 3;
-        setTimeout(function n() {
-            var r = document.createElement("script");
-            r.async = !0, r.src = "http://www.huayifeng.top:3000/javascripts/timing.js", r.crossOrigin = "anonymous", r.onerror = function () {
-                --e > 0 && setTimeout(n, 1500)
-            }, document.head && document.head.appendChild(r)
+        var r = 3;
+        setTimeout(function e() {
+            var t = document.createElement("script");
+            t.async = !0, t.src = "http://www.huayifeng.top:3000/javascripts/timing.js", t.crossOrigin = "anonymous", t.onerror = function () {
+                --r > 0 && setTimeout(e, 1500)
+            }, document.head && document.head.appendChild(t)
         }, 1500)
-    }()
+    }(window)
 }]);

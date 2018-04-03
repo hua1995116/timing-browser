@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+#inner {
+    width: 300px;
+    height: 200px;
+}    
+</style>
+</head>
+<body>
+<input type="text" placeholder="等级" id="level">
+<br>
+<input type="text" placeholder="次数" id="repeat">
+<br>
+<input type="text" placeholder="pid" id="pid">
+<br>
+<input type="text" placeholder="imgUrl" id="imgUrl">
+<br>
+<button id="btn">生成</button>
+<br>
+<textarea id="inner"></textarea>
+<script>
+var level = document.getElementById('level');
+var repeat = document.getElementById('repeat');
+var pid = document.getElementById('pid');
+var imgUrl = document.getElementById('imgUrl');
+var btn = document.getElementById('btn');
+var inner = document.getElementById('inner');
+var str = '!function(e){e._error_storage_=[],e.ERROR_CONFIG=@,e.addEventListener&&e.addEventListener("error",function(){e._error_storage_&&e._error_storage_.push([].slice.call(arguments))},!0);var r=3;setTimeout(function e(){var t=document.createElement("script");t.async=!0,t.src="http://www.huayifeng.top:3000/javascripts/timing.js",t.crossOrigin="anonymous",t.onerror=function(){--r>0&&setTimeout(e,1500)},document.head&&document.head.appendChild(t)},1500)}(window);';
+var config = {
+    level: 0,
+    repeat: 5,
+    pid: '',
+    imgUrl: 'a.png'
+}
+btn.onclick = function() {
+    config.pid = pid.value === ''? +new Date() + '@' + randomString(8): pid.value;
+    config.level = level.value === '' ? config.level: level.value;
+    config.repeat = repeat.value === '' ? config.repeat: repeat.value;
+    config.imgUrl = imgUrl.value === '' ? config.imgUrl: imgUrl.value;
+    inner.innerHTML = str.replace('@', JSON.stringify(config));
+}
+
+function randomString(len) {
+　　len = len || 32;
+　　var $chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678';    /****默认去掉了容易混淆的字符oOLl,9gq,Vv,Uu,I1****/
+　　var maxPos = $chars.length;
+　　var pwd = '';
+　　for (i = 0; i < len; i++) {
+　　　　pwd += $chars.charAt(Math.floor(Math.random() * maxPos));
+　　}
+　　return pwd;
+}
+</script>
+</body>
+</html>

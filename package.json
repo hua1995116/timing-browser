@@ -1,5 +1,5 @@
 {
-  "name": "timing",
+  "name": "sky-eye-sdk",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
@@ -7,7 +7,7 @@
     "start": "webpack --config webpack.config.js  --mode development",
     "build": "webpack --mode production"
   },
-  "author": "",
+  "author": "huayifeng<huayifeng@tuia.cn>",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.0",

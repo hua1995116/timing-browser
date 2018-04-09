@@ -1,0 +1,21 @@
+{
+  "name": "timing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack --config webpack.config.js  --mode development",
+    "build": "webpack --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "qs": "^6.5.1",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.14"
+  }
+}

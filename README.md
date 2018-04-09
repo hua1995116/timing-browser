@@ -17,7 +17,7 @@ npm run build
 打包成timing.js 用于异步加载统计
 
 ## 说明
-
+```
 export interface config {
     client: string; // 项目上报id
     imgUrl: string; // 请求url
@@ -25,3 +25,4 @@ export interface config {
     repeat: Number; // 重复上报次数
     ignore: Array<RegExp | Function>; // 过滤条件
 }
+```

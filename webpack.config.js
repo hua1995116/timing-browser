@@ -4,7 +4,6 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
     entry: {
       timing:  __dirname + '/lib/index.js',
-      browser: __dirname + '/lib/browser.js',
     },
     output: {
         path: __dirname + '/build',

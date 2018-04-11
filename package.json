@@ -1,5 +1,5 @@
 {
-  "name": "timing",
+  "name": "sky-eye-sdk",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
@@ -7,14 +7,16 @@
     "start": "webpack --config webpack.config.js  --mode development",
     "build": "webpack --mode production"
   },
-  "author": "",
+  "author": "huayifeng<huayifeng@tuia.cn>",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "qs": "^6.5.1",
     "uglifyjs-webpack-plugin": "^1.2.4",
-    "webpack": "^4.1.1"
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.14"
   }
 }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        (function(w) {
+            w._error_storage_ = [];
+            w.ERROR_CONFIG = {
+                client: 'test',
+                imgUrl: 'http://retcode.tuipink.com/report?', // http://retcode.tuipink.com/report
+                version: '0.0.1',
+                pageId: 'smashg_2',
+            };
+            function errorhandler(){
+                // 用于记录当前的错误            
+                w._error_storage_&&w._error_storage_.push([].slice.call(arguments));
+            } 
+            w.addEventListener && w.addEventListener("error", errorhandler, true);
+            var times = 3,
+            appendScript = function appendScript() {
+                var sc = document.createElement("script");
+                sc.async = !0,
+                sc.src = './skyeye.js',  // 取决于你存放的位置
+                sc.crossOrigin = "anonymous",
+                sc.onerror = function() {
+                    times--,
+                    times > 0 && setTimeout(appendScript, 1500)
+                },
+                document.head && document.head.appendChild(sc);
+            };
+            setTimeout(appendScript, 1500);
+        })(window);
+    </script>
+    <script src='s.js'></script>
+</head>
+<body>
+    <div>2</div>
+    <div>2</div>
+    <div>2</div>
+    <div>2</div>
+    <div>2</div>
+    <div>2</div> 
+    <img src="sd.jpg" alt="">
+<script>
+    // var body = document.querySelector('body');
+    // var list = '';
+    // for(var i = 0; i < 1000; i++) {
+    //     list += '<div>'+i+'</div>'
+    // }
+    // body.innerHTML = list;
+</script>
+<script>
+    console.log(aaa);
+</script>
+<!-- <script src="http://wechatfe.github.io/vconsole/lib/vconsole.min.js?v=3.0.0.0"></script>
+<script>
+	var vConsole = new VConsole();
+</script> -->
+</body>
+</html>

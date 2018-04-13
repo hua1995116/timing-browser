@@ -9,4 +9,4 @@ router.get('/', function (req, res, next) {
 app.use(router);
 
 app.use(express.static('./'));
-const server = app.listen(3000)
+const server = app.listen(3300)

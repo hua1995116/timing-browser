@@ -50,4 +50,3 @@ node_modules
 dist
 .idea
 application.log
-build

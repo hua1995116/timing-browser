@@ -6,7 +6,7 @@ module.exports = {
       skyeye:  __dirname + '/lib/index.js',
     },
     output: {
-        path: __dirname + '/build',
+        path: __dirname + '/demo/build',
         filename: "[name].js"
     },
     module: {

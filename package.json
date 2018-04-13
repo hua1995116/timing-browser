@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "start": "webpack --config webpack.config.js  --mode development",
-    "build": "webpack --mode production && uglifyjs lib/browser.js -m -o build/browser.js"
+    "build": "webpack --mode production && uglifyjs lib/browser.js -m -o demo/build/browser.js"
   },
   "author": "huayifeng<huayifeng@tuia.cn>",
   "license": "ISC",
